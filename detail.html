@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="details.css" />
+      <link rel="manifest" href="manifest.json" />
+
+    <script src="detail.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="arrow-container">
+          <a class="left-arrow" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30"viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path></svg></a>
+          <h1 id="name"></h1>
+          <a class="right-arrow" href=""><svg xmlns="http://www.w3.org/2000/svg" width="30" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path></svg></a>
+         
+        </div>
+
+        <div class="detailsDiv">
+           <img class="pokemon-img" src="" alt="" />
+          <div class="powerDiv">
+            <span class="power grass"></span>
+            <span class="power fire"></span>
+          </div>
+          <h2>About</h2>
+
+          <div class="details-abilities">
+            <div>
+              <h3>Height</h3>
+              <span id="height"></span>
+            </div>
+            <div>
+              <h3>Weight</h3>
+              <span id="weight"></span>
+            </div>
+            <div>
+              <h3>Abilities</h3>
+              <span id="abilities"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

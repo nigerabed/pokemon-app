@@ -1,0 +1,15 @@
+{
+    "name": "Pokedex",
+    "short_name": "PokeDex",
+    "start_url": "http://127.0.0.1:5501/index.html",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Pokemon details suggested based on the pokemon", 
+    "icons" :[
+        {
+            "src": "image/pokemon.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ]
+}

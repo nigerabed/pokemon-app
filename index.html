@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+     <link rel="manifest" href="manifest.json" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <section>
+        <nav class="navBar">
+          <div class="burgerMenu">
+            <svg
+              class="iconColor burger"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+          </div>
+          <a>
+            <svg
+              class="iconColor user"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"
+              ></path>
+            </svg>
+            Log in
+          </a>
+        </nav>
+        <div class="h1Div">
+          <h1>Pokédex</h1>
+        </div>
+
+        <div class="form-text-Div">
+          <form id="form">
+            <label>Name or Number </label>
+            <input id="searchInput" type="text" />
+            <button type="submit">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgb(236, 231, 231)"
+              >
+                <path
+                  d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+                ></path>
+              </svg>
+            </button>
+          </form>
+
+          <p class="pokemon-type-text">
+            Use the Advanced Search to explore Pokémon by type, weakness,
+            Ability, and more!
+          </p>
+          <div>
+            <p class="green-div-text">
+              Search for a Pokémon by name or using its National Pokédex number.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- <div>Filtered By: <span id="filteredBy"></span></div> -->
+      <div class="previous-next-div">
+        <a class="previous" >Previous</a>
+        <a class="next">Next</a>
+      </div>
+
+      <ul>
+        <li>
+        
+        </li>
+      </ul>
+
+      <ul id="pokemonList"></ul>
+    </main>
+  </body>
+</html>
