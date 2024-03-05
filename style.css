@@ -97,6 +97,7 @@ form button {
   margin-top: 2em;
 text-align: center;
   width: 100%;
+  margin-bottom: 1em;
 }
 
 .previous-next-div a{
@@ -123,8 +124,9 @@ ul {
   justify-items: center;
 }
 .poke-container {
-  width:22em;
-  height: 20em;
+  width:20em;
+  height: 25em;
+  margin-bottom: 1em;
   background-color: #fff;
   /* margin-top: .5em; */
   border-radius: 2em;

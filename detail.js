@@ -6,24 +6,15 @@ async function getPokemonDetails(id) {
   const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + id);
   const pokemon = await response.json();
   console.log(pokemon);
-  
-  showInHtml(pokemon);
-}
 
-async function getPokemonDesc() {
-  const response = await fetch(`${pokemon.species.url}`)
-  const pokemonDesc = await response.json();
+  const desc = await fetch(`${pokemon.species.url}`);
+  const pokemonDesc = await desc.json();
   console.log(pokemonDesc);
-  console.log(`${pokemon.species.url}`);
-
-  // showInHtml(pokemon);
+  console.log(`${pokemonDesc.flavor_text_entries[0].flavor_text}`);
+  showInHtml(pokemon, pokemonDesc);
 }
 
-getPokemonDesc()
-
-
-
-function showInHtml(pokemon) {
+function showInHtml(pokemon, pokemonDesc) {
   let name = document.getElementById("name");
   //name.innerHTML = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
   name.innerHTML = capitalizeMyString(pokemon.name);
@@ -44,23 +35,21 @@ function showInHtml(pokemon) {
   for (let i = 0; i < pokemon.abilities.length; i++) {
     let ability = pokemon.abilities[i].ability.name;
     //Uability = ability.charAt(0).toUpperCase() + ability.slice(1);
-    
+
     abilities.innerHTML += capitalizeMyString(ability) + "  ";
   }
 
   let Beskrivelse = document.querySelector(".Beskrivelse");
-  Beskrivelse.innerHTML = pokemon.species.url
+  Beskrivelse.innerHTML = pokemonDesc.flavor_text_entries[0].flavor_text;
 }
 
-function capitalizeMyString(str){
+function capitalizeMyString(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
-
-
 
 getPokemonDetails(id);
 
 let leftArrow = document.querySelector(".left-arrow");
 let rightArrow = document.querySelector(".right-arrow");
-  leftArrow.href = `detail.html?id=${id-1}`;
-  rightArrow.href = `detail.html?id=${id+1}`;
+leftArrow.href = `detail.html?id=${id - 1}`;
+rightArrow.href = `detail.html?id=${id + 1}`;

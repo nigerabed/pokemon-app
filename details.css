@@ -7,8 +7,8 @@
 section{
     margin-top: 1em;
     margin: auto;
-    height: 42em;
-    width: 26em;
+    height: 100%;
+    width: 100%;
     background-color: rgb(219, 245, 193);
     text-align: center;
     padding-top: 1em;
@@ -34,21 +34,24 @@ h2{
     margin-bottom: 1em;
 }
 .Beskrivelse{
-    margin-top: 1em;
+    margin-top: 2em;
+    padding: 1em;
 }
 
 .detailsDiv{
     height: 35em;
-    width: 24em;
+    width: 22em;
     background-color: antiquewhite;
     margin: auto;
     margin-top: 2em;
+    margin-bottom: 2em;
     border-radius: 1em;
     border: 1px solid black;
 }
 .details-abilities{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 2em;
 }
 
 .pokemon-img{
