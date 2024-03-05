@@ -1,6 +1,6 @@
 
 const params = new URLSearchParams(location.search);
-const limit = parseInt(params.get("limit")) || 10;
+const limit = parseInt(params.get("limit")) || 20;
 const offset = parseInt(params.get("offset")) || 0;
 
 async function getPokemons(limit, offset) {

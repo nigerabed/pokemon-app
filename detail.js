@@ -6,9 +6,22 @@ async function getPokemonDetails(id) {
   const response = await fetch("https://pokeapi.co/api/v2/pokemon/" + id);
   const pokemon = await response.json();
   console.log(pokemon);
-
+  
   showInHtml(pokemon);
 }
+
+async function getPokemonDesc() {
+  const response = await fetch(`${pokemon.species.url}`)
+  const pokemonDesc = await response.json();
+  console.log(pokemonDesc);
+  console.log(`${pokemon.species.url}`);
+
+  // showInHtml(pokemon);
+}
+
+getPokemonDesc()
+
+
 
 function showInHtml(pokemon) {
   let name = document.getElementById("name");
@@ -34,6 +47,9 @@ function showInHtml(pokemon) {
     
     abilities.innerHTML += capitalizeMyString(ability) + "  ";
   }
+
+  let Beskrivelse = document.querySelector(".Beskrivelse");
+  Beskrivelse.innerHTML = pokemon.species.url
 }
 
 function capitalizeMyString(str){

@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-image: url(image/background-hero.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 header section {
   background-color: #313131;
@@ -89,6 +94,7 @@ form button {
 }
 
 .previous-next-div{
+  margin-top: 2em;
 text-align: center;
   width: 100%;
 }
@@ -117,9 +123,10 @@ ul {
   justify-items: center;
 }
 .poke-container {
-  width:30em;
-  height: 23em;
-  margin-top: 2em;
+  width:22em;
+  height: 20em;
+  background-color: #fff;
+  /* margin-top: .5em; */
   border-radius: 2em;
  display: flex;
  flex-direction: column;
@@ -142,9 +149,10 @@ li{
     color: #222020;
 }
 
-.poke-container img {
+.poke-container a img {
     width: fit-content;
    height: 15em;
+   width: 17em;
 
  margin-bottom: 1em;
  object-fit: contain;
@@ -200,8 +208,8 @@ li{
   }
 
   .poke-container {
-  width:22em;
-  height: 25em;
+  width:18em;
+  height: 26em;
   margin-top: 2em;
   border-radius: 2em;
  display: flex;
